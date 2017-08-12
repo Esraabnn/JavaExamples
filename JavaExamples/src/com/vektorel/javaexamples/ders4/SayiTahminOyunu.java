@@ -15,6 +15,7 @@ public class SayiTahminOyunu {
 	private void sayiTahminOyunu() {
 		Random rand=new Random();
 		int sayi = rand.nextInt(100);
+		
 		Scanner scanner=new Scanner(System.in);
 		int girilenDeger=0;
 		
@@ -60,6 +61,6 @@ public class SayiTahminOyunu {
 		else if(sayac==4)
 			System.out.println("12 PUAN");
 		else
-			System.out.println("12 PUAN");
+			System.out.println("5 PUAN");
 	}
 }

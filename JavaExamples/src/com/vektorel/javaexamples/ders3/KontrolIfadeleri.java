@@ -9,11 +9,6 @@ public class KontrolIfadeleri {
 		System.out.println("Deger Gir:");
 		Scanner scanner =new Scanner(System.in);
 		int degisken = scanner.nextInt();
-		
-	
-		
-		
-		
 	}
 	
 	public void basitIfYapisi(int degisken) {

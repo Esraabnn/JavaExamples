@@ -10,5 +10,6 @@ public class DersDenem {
 		
 		DonguOrnekleri donguOrnekleri=new DonguOrnekleri();
 		donguOrnekleri.tamKarekokBulanMethod(sayi);
+		
 	}
 }
