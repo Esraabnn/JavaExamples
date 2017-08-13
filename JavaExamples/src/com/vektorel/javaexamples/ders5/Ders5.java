@@ -5,6 +5,7 @@ public class Ders5 {
 	public static void main(String[] args) {
 		Ders5 ders5 = new Ders5();
 		ders5.basitDizi2();
+		
 	}
 
 	private void basitDizi() {
