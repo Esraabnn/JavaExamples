@@ -5,12 +5,8 @@ public class StringMetodlari {
 	public static void main(String[] args) {
 		StringMetodlari metodlari = new StringMetodlari();
 		String a = "StringMetodlari ";
-		// metodlari.stringMetodlari(a);
-
 		String kanTestMesaji = "HASTA@Taner TEMEL@YAS@42@TARIH@21/09/2017@WBC@3.17@2.3@4.8@EC@4.7@4.1@4.5@KC@4.3@4.1@4.5@LB@4.3@4.1@4.5#HASTA@Cemal TEMEL@YAS@42@TARIH@21/09/2017@WBC@3.17@2.3@4.8@EC@4.7@4.1@4.5@KC@4.3@4.1@4.5@LB@4.3@4.1@4.5#HASTA@Ahmet TEMEL@YAS@42@TARIH@21/09/2017@WBC@3.17@2.3@4.8@EC@4.7@4.1@4.5";
 		metodlari.hastalariIsle(kanTestMesaji);
-		
-
 	}
 
 	public void stringMetodlari(String metin) {
