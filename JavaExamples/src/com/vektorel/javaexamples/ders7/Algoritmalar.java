@@ -15,12 +15,12 @@ public class Algoritmalar {
 
 	public void alg1() {
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("Kaç ortalama alacaksın:");
+		System.out.println("KaÃ§ ortalama alacaksÃ½n:");
 		int sayiAdedi = scanner.nextInt();
 
 		List<Integer> integers = new ArrayList<>();
 		for (int i = 0; i < sayiAdedi; i++) {
-			System.out.println("Giriş:");
+			System.out.println("GiriÃ¾:");
 			integers.add(scanner.nextInt());
 		}
 
@@ -34,28 +34,28 @@ public class Algoritmalar {
 
 	public void alg2() {
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("Kaç sayı gireceksin:");
+		System.out.println("KaÃ§ sayÃ½ gireceksin:");
 		int sayiAdedi = scanner.nextInt();
 
 		List<Integer> integers = new ArrayList<>();
 		for (int i = 0; i < sayiAdedi; i++) {
-			System.out.println("Giriş:");
+			System.out.println("GiriÃ¾:");
 			integers.add(scanner.nextInt());
 		}
 
 		integers.sort(null);
 
-		System.out.println("En küçük : " + integers.get(0));
-		System.out.println("En büyük : " + integers.get(sayiAdedi - 1));
+		System.out.println("En kÃ¼Ã§Ã¼k : " + integers.get(0));
+		System.out.println("En bÃ¼yÃ¼k : " + integers.get(sayiAdedi - 1));
 	}
 
 	public void alg3() {
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("Kaç sayı gireceksin:");
+		System.out.println("KaÃ§ sayÃ½ gireceksin:");
 		List<Integer> liste = new ArrayList<>();
 
 		for (int i = 0; i < 5; i++) {
-			System.out.println("Sayı Giriniz:");
+			System.out.println("SayÃ½ Giriniz:");
 			liste.add(scanner.nextInt());
 		}
 
@@ -66,7 +66,7 @@ public class Algoritmalar {
 			}
 		}
 
-		System.out.println(sayac + " tane 10 dan büyük eleman girdiniz.");
+		System.out.println(sayac + " tane 10 dan bÃ¼yÃ¼k eleman girdiniz.");
 	}
 
 	public void alg4() {
@@ -74,7 +74,7 @@ public class Algoritmalar {
 		List<Integer> list = new ArrayList<>();
 		int sayi = 1;
 		while (sayi != 0) {
-			System.out.println("Sayı gir:");
+			System.out.println("SayÃ½ gir:");
 			sayi = scanner.nextInt();
 			if (sayi != 0)
 				list.add(sayi);
@@ -135,7 +135,7 @@ public class Algoritmalar {
 	public void alg7() {
 		List<Integer> list = new ArrayList<>();
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("5 Adet Sayı Giriniz:");
+		System.out.println("5 Adet SayÃ½ Giriniz:");
 
 		for (int i = 0; i < 5; i++) {
 			int sayi = scanner.nextInt();
@@ -157,15 +157,15 @@ public class Algoritmalar {
 		System.out.println("Final Giriniz:");
 		int fnl = scanner.nextInt();
 
-		System.out.println("Not Ortalaması :" + ((vize1 * 0.3) + (vize2 * 0.3) + (fnl * 0.4)));
+		System.out.println("Not OrtalamasÃ½ :" + ((vize1 * 0.3) + (vize2 * 0.3) + (fnl * 0.4)));
 	}
 
 	public void alg9() {
 		List<Integer> list = new ArrayList<>();
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("1 Adet Sayı Giriniz:");
+		System.out.println("1 Adet SayÃ½ Giriniz:");
 		int sayi = scanner.nextInt();
-		System.out.println("10 Adet Sayı Giriniz:");
+		System.out.println("10 Adet SayÃ½ Giriniz:");
 
 		for (int i = 0; i < 10; i++) {
 			list.add(sayi * scanner.nextInt());
@@ -179,7 +179,7 @@ public class Algoritmalar {
 	public void alg10() {
 		List<Double> list = new ArrayList<>();
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("10 Adet Sayı Giriniz:");
+		System.out.println("10 Adet SayÃ½ Giriniz:");
 
 		for (int i = 0; i < 10; i++) {
 			list.add(scanner.nextDouble());
@@ -187,16 +187,16 @@ public class Algoritmalar {
 
 		for (Double deger : list) {
 			if (deger > 5)
-				System.out.println("5 ten büyük , Yarısı : " + (deger / 2));
+				System.out.println("5 ten bÃ¼yÃ¼k , YarÃ½sÃ½ : " + (deger / 2));
 			else
-				System.out.println("5 ten küçük , İki Katı : " + (deger * 2));
+				System.out.println("5 ten kÃ¼Ã§Ã¼k , Ãki KatÃ½ : " + (deger * 2));
 		}
 	}
 
 	public void alg11() {
 		List<Double> list = new ArrayList<>();
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("5 Adet Sayı Giriniz:");
+		System.out.println("5 Adet SayÃ½ Giriniz:");
 
 		for (int i = 0; i < 5; i++) {
 			list.add(scanner.nextDouble());
@@ -217,15 +217,15 @@ public class Algoritmalar {
 	public void alg12() {
 		List<Double> list = new ArrayList<>();
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("5 Adet Yarıçap Giriniz:");
+		System.out.println("5 Adet YarÃ½Ã§ap Giriniz:");
 
 		for (int i = 0; i < 5; i++) {
 			list.add(scanner.nextDouble());
 		}
 
 		for (Double yaricap : list) {
-			System.out.println("Yarıçapı " + yaricap + " olan çemberin alanı :" + (yaricap * yaricap * Math.PI));
-			System.out.println("Yarıçapı " + yaricap + " olan çemberin çevre :" + (yaricap * 2 * Math.PI));
+			System.out.println("YarÃ½Ã§apÃ½ " + yaricap + " olan Ã§emberin alanÃ½ :" + (yaricap * yaricap * Math.PI));
+			System.out.println("YarÃ½Ã§apÃ½ " + yaricap + " olan Ã§emberin Ã§evre :" + (yaricap * 2 * Math.PI));
 			System.out.println();
 		}
 	}
@@ -233,16 +233,16 @@ public class Algoritmalar {
 	public void alg13() {
 		List<Integer> list = new ArrayList<>();
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("Kaç Adet Not girmek istiyorsun :");
+		System.out.println("KaÃ§ Adet Not girmek istiyorsun :");
 		int n = scanner.nextInt();
-		System.out.println("Notları gir:");
+		System.out.println("NotlarÃ½ gir:");
 		for (int i = 0; i < n; i++) {
 			list.add(scanner.nextInt());
 		}
 
 		list.sort(null);
-		System.out.println("En Küçük :" + list.get(0));
-		System.out.println("En Büyük :" + list.get(n - 1));
+		System.out.println("En KÃ¼Ã§Ã¼k :" + list.get(0));
+		System.out.println("En BÃ¼yÃ¼k :" + list.get(n - 1));
 	}
 
 	public void alg14() {
@@ -262,22 +262,22 @@ public class Algoritmalar {
 	public void alg16() {
 		Scanner scanner = new Scanner(System.in);
 		while (true) {		
-			System.out.println("Ay numarası giriniz :");
+			System.out.println("Ay numarasÃ½ giriniz :");
 			int n = scanner.nextInt();
 	
 			switch (n) {
 				case 1: System.out.println("Ocak"); break;
-				case 2: System.out.println("Şubat"); break;
+				case 2: System.out.println("Ãubat"); break;
 				case 3: System.out.println("Mart"); break;
 				case 4: System.out.println("Nisan"); break;
-				case 5: System.out.println("Mayıs"); break;
+				case 5: System.out.println("MayÃ½s"); break;
 				case 6: System.out.println("Haziran"); break;
 				case 7: System.out.println("Temmuz"); break;
-				case 8: System.out.println("Ağustos"); break;
-				case 9: System.out.println("Eylül"); break;
+				case 8: System.out.println("AÃ°ustos"); break;
+				case 9: System.out.println("EylÃ¼l"); break;
 				case 10: System.out.println("Ekim"); break;
-				case 11: System.out.println("Kasım"); break;
-				case 12: System.out.println("Aralık"); break;
+				case 11: System.out.println("KasÃ½m"); break;
+				case 12: System.out.println("AralÃ½k"); break;
 				default :System.out.println("Hata");break;
 			}
 		}
@@ -285,8 +285,8 @@ public class Algoritmalar {
 
 	public void alg17() {
 		Scanner scanner=new Scanner(System.in);
-		String[] gunler={"Pazartesi","Salı","Çarşamba","Perşembe","Cuma","Cumartesi","Pazar"};
-		System.out.println("Gün giriniz :");
+		String[] gunler={"Pazartesi","SalÃ½","Ã‡arÃ¾amba","PerÃ¾embe","Cuma","Cumartesi","Pazar"};
+		System.out.println("GÃ¼n giriniz :");
 		String gun = scanner.nextLine();
 		
 		for (int i = 0; i < gunler.length; i++) {
@@ -304,16 +304,16 @@ public class Algoritmalar {
 		List<Double> kdvler =new ArrayList<>();
 		
 		for (int i = 0; i < malSayisi; i++) {
-			System.out.println((i+1) + ". Mal için Fiyat Giriniz:");
+			System.out.println((i+1) + ". Mal iÃ§in Fiyat Giriniz:");
 			mallar.add(scanner.nextDouble());
-			System.out.println((i+1) + ". Mal için KDV (%) Giriniz:");
+			System.out.println((i+1) + ". Mal iÃ§in KDV (%) Giriniz:");
 			kdvler.add(scanner.nextDouble());
 		}
 		
 		double toplam=0;
 		for (int i = 0; i < malSayisi; i++) {
 			double netFiyat=mallar.get(i) + (mallar.get(i)* kdvler.get(i)/100);
-			System.out.println((i+1) + ". Mal için net Fiyat :" + netFiyat);
+			System.out.println((i+1) + ". Mal iÃ§in net Fiyat :" + netFiyat);
 			toplam+=netFiyat;
 		}		
 		
@@ -323,17 +323,17 @@ public class Algoritmalar {
 
 	public void alg19() {
 		Scanner scanner =new Scanner(System.in);
-		System.out.println("Şarkı Sayısı Giriniz:");
+		System.out.println("ÃarkÃ½ SayÃ½sÃ½ Giriniz:");
 		int sarkiSayisi = scanner.nextInt();
 		List<Double> sarkilar =new ArrayList<>();
 		double toplam=0;
 		for (int i = 0; i < sarkiSayisi; i++) {
-			System.out.println((i+1) + ". Şarkı için süre giriniz:");
+			System.out.println((i+1) + ". ÃarkÃ½ iÃ§in sÃ¼re giriniz:");
 			sarkilar.add(scanner.nextDouble());
 			toplam+=sarkilar.get(i);
 		}
 		
-		System.out.println("Toplam Süre (Saat) : " + toplam/60);
+		System.out.println("Toplam SÃ¼re (Saat) : " + toplam/60);
 	}
 }
 
@@ -349,16 +349,3 @@ public class Algoritmalar {
 
 
 
-
-
-
-
-
-
-
-
-
-
-/**
- * 26xED28YN454EN4Mzz9iVNjH6a6NR2SameAMw556x3QBWVLfP6EotzBPTDV12mc4Pw6Ep1zJeFPmY6Gz1yorvVsAPM3LaNW
-*/
