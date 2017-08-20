@@ -10,7 +10,7 @@ public class Algoritmalar {
 
 	public static void main(String[] args) {
 		Algoritmalar algoritmalar = new Algoritmalar();
-		algoritmalar.alg16();
+		algoritmalar.alg19();
 	}
 
 	public void alg1() {
@@ -281,6 +281,59 @@ public class Algoritmalar {
 				default :System.out.println("Hata");break;
 			}
 		}
+	}
+
+	public void alg17() {
+		Scanner scanner=new Scanner(System.in);
+		String[] gunler={"Pazartesi","Salý","Çarþamba","Perþembe","Cuma","Cumartesi","Pazar"};
+		System.out.println("Gün giriniz :");
+		String gun = scanner.nextLine();
+		
+		for (int i = 0; i < gunler.length; i++) {
+			if(gun.equalsIgnoreCase(gunler[i]))
+				System.out.println(i+1);
+		}
+	}
+
+	public void alg18() {
+
+		Scanner scanner =new Scanner(System.in);
+		System.out.println("Mal Adedi Giriniz:");
+		int malSayisi = scanner.nextInt();
+		List<Double> mallar =new ArrayList<>();
+		List<Double> kdvler =new ArrayList<>();
+		
+		for (int i = 0; i < malSayisi; i++) {
+			System.out.println((i+1) + ". Mal için Fiyat Giriniz:");
+			mallar.add(scanner.nextDouble());
+			System.out.println((i+1) + ". Mal için KDV (%) Giriniz:");
+			kdvler.add(scanner.nextDouble());
+		}
+		
+		double toplam=0;
+		for (int i = 0; i < malSayisi; i++) {
+			double netFiyat=mallar.get(i) + (mallar.get(i)* kdvler.get(i)/100);
+			System.out.println((i+1) + ". Mal için net Fiyat :" + netFiyat);
+			toplam+=netFiyat;
+		}		
+		
+		System.out.println("Toplam Net Fiyat :" + toplam);
+		
+	}
+
+	public void alg19() {
+		Scanner scanner =new Scanner(System.in);
+		System.out.println("Þarký Sayýsý Giriniz:");
+		int sarkiSayisi = scanner.nextInt();
+		List<Double> sarkilar =new ArrayList<>();
+		double toplam=0;
+		for (int i = 0; i < sarkiSayisi; i++) {
+			System.out.println((i+1) + ". Þarký için süre giriniz:");
+			sarkilar.add(scanner.nextDouble());
+			toplam+=sarkilar.get(i);
+		}
+		
+		System.out.println("Toplam Süre (Saat) : " + toplam/60);
 	}
 }
 
