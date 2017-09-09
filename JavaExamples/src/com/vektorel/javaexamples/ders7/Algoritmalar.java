@@ -336,29 +336,3 @@ public class Algoritmalar {
 		System.out.println("Toplam Süre (Saat) : " + toplam/60);
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**
- * 26xED28YN454EN4Mzz9iVNjH6a6NR2SameAMw556x3QBWVLfP6EotzBPTDV12mc4Pw6Ep1zJeFPmY6Gz1yorvVsAPM3LaNW
-*/
